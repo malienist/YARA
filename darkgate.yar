@@ -66,7 +66,6 @@ rule DarkGateMisc {
 }
 
 rule DarkGateRndm {
-   DarkGateElevation {
       meta:
               author = "Vishal Thakur - malienist.medium.com"
               date = "2023-Dec-11"
