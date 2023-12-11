@@ -9,7 +9,7 @@ rule DarkGateStrings {
             version = "1"
             description = "Detects DarkGate Malware"
             info = "Generated from information extracted from the malware sample by manual analysis."
-    Strings:
+    strings:
             $str1 = { 2f 63 20 63 6d 64 6b 65 79 20 2f 67 65 6e 65 72 69 63 3a 22 31 32 37 2e 30 2e 30 2e 32 22 20 2f 75 73 65 72 3a 22 53 61 66 65 4d 6f 64 65 22 20 2f 70 61 73 73 3a 22 64 61 72 6b 67 61 74 65 70 61 73 73 77 6f 72 64 30 22 }
             $str2 = { 43 3a 5c 74 65 6d 70 5c 74 73 6b 6d }
             $str3 = { 4e 6f 20 73 74 61 72 74 75 70 20 63 6f 6e 66 69 67 75 72 65 64 2c 20 73 6b 69 70 20 75 70 64 61 74 65 }
@@ -50,7 +50,7 @@ rule DarkGateMisc {
               version = "1"
               description = "Detects DarkGate Malware"
               info = "Generated from information extracted from the malware sample by manual analysis. Rule to detect DarkGate related to misc strings."
-    Strings: 
+    strings: 
               str1= 2f 63 20 63 3a 5c 74 65 6d 70 5c 50 73 45 78 65 63 2e 65 78 65 20 2d 61 63 63 65 70 74 65 75 6c 61 20 2d 69 20 2d 64 20 2d 73
               str2= 4e 6f 20 73 74 61 72 74 75 70 20 63 6f 6e 66 69 67 75 72 65 64 2c 20 73 6b 69 70 20 75 70 64 61 74 65
               str3= 43 6f 72 72 75 70 74 65 64 20 64 6f 77 6e 6c 6f 61 64 65 64 20 72 65 73 6f 75 72 63 65 73
